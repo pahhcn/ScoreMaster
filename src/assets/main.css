@@ -1,0 +1,57 @@
+@import './base.css';
+
+/* 让页面全屏 */
+html, body, #app {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 可选：移除 #app 的最大宽度和居中 */
+#app {
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  display: block;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* 移除 1024px 以上的 grid 布局和 flex 居中 */
+@media (min-width: 1024px) {
+  body {
+    display: block;
+    place-items: unset;
+  }
+
+  #app {
+    display: block;
+    grid-template-columns: unset;
+    padding: 0;
+  }
+}
+
+/* App.vue 或 main.css */
+nav a.disabled {
+  pointer-events: none;
+  color: #bbb !important;
+  cursor: not-allowed;
+}
