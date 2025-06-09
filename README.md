@@ -2,7 +2,7 @@
 
 ## 一、项目名称-ScoreMaster：一款基于 Web 的成绩管理系统
 
-![home](https://github.com/pahhcn/ScoreMaster/blob/main/src/assets/42.jpg/home.png)
+![home](https://raw.githubusercontent.com/pahhcn/ScoreMaster/main/src/assets/home.png)
 
 ### 一、要求
 
